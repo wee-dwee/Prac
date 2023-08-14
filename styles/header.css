@@ -1,0 +1,140 @@
+.header{
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(240, 240, 240);
+    z-index: 100;
+
+}
+.menu{
+    height: 25px;
+    margin-left: 18px;
+    margin-right: 15px;
+}
+.y-logo{
+    height: 20px;
+}
+.left-section{
+    width: 160px;
+}
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(198, 198, 198);
+    margin-left: -1px;
+    position: relative;
+}
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 15px;
+    background-color:rgb(248, 248, 248);
+}
+.voice-search-icon{
+    height: 24px;
+    margin-top: 4px;
+    background-color: rgb(248, 248, 248);
+}
+.right-section{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.search-bar{
+    flex:1;
+    height:36px;
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(198, 198, 198);
+    box-shadow: inset 1px 2px 2px rgba(0,0,0,0.05);
+    width: 0;
+}
+.search-bar::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 16;
+    color:rgb(129, 125, 125);
+}
+.middle-section{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center;
+}
+.upload{
+    height: 24px;
+}
+.youtube-apps{
+    height: 24px;
+}
+.notifications{
+    height: 24px;
+}
+.notifications-icon-con{
+    position: relative;
+}
+.not-num{
+    position: absolute;
+    top:-3px;
+    right: -3px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border-radius: 10px;
+    font-size: Roboto,Ariel;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+.my-channel{
+    height: 32px;
+}
+.search-button:hover .tooltip,.voice-search-button:hover .tooltip
+{
+    opacity: 1;
+}
+.search-button .tooltip, .voice-search-button .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+}
